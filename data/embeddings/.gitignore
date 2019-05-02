@@ -1,0 +1,5 @@
+*
+!glove_download.sh
+!fasttext_download.sh
+!word2vec_download.sh
+!.gitignore
