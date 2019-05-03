@@ -1,7 +1,5 @@
 #%% [markdown]
 # Regularization
-
-#%%
 #%%
 with open('common.py') as fin:
     exec(fin.read())
@@ -10,6 +8,9 @@ with open('matplotlibconf.py') as fin:
     exec(fin.read())
 
 #%%
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation, Flatten
+from keras.preprocessing.image import ImageDataGenerator
 import keras.backend as K
 
 #%% [markdown]
@@ -225,7 +226,7 @@ plt.ylim(0.85, 1.05)
 # Let us use another modern technique called **Dropout**
 
 #%% [markdown]
-# ## Dropout]
+# ## Dropout
 # 
 # ![Dropout](./assets/dropout_network.png)
 
